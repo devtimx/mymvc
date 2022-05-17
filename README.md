@@ -24,41 +24,36 @@ $router->add('/home/:name',array(new MainController(),'index'));
 ```
 ### Árbol de directorios sugeridos
 
+``` tree
+Project
+├── app
+│   ├── Controllers
+│   │   └── MainController.php
+│   ├── Models
+│   └── views
+│       ├── layout
+│       │   ├── footer.php
+│       │   └── header.php
+│       └── main
+│           └── index.php
+├── core
+│   ├── app.php
+│   ├── autoload.php
+│   ├── Response.php
+│   ├── Route.php
+│   └── Router.php
+├── database
+│   └── db.sql
+├── public
+│   ├── assets
+│   │   ├── css
+│   │   │   └── styles.css
+│   │   └── js
+│   │       └── scripts.css
+│   ├── .htaccess
+│   └── index.php
+├── README.md
+├── routes
+│   └── routes.php
+└── storage
 ```
-project
-| README.m
-|
-|__app
-|  |__Controllers
-|     | MainController.php
-|  |__Models
-|  |__views
-|     |__layout
-|        | header.php
-|        | footer.php
-|     |__main
-|        | index.php
-|
-|__core
-|  | app.php
-|  | autoload.php
-|  | Response.php
-|  | Route.php
-|  | Router.php
-|
-|__database
-|  | db.sql
-|
-|__public
-|  |__assets
-|     |__css
-|     | style.css
-|     |__js
-|     | scritps.js
-|  | .htaccess
-|  | index.php
-|
-|__router
-|  | routes.php
-|
-|__storage
